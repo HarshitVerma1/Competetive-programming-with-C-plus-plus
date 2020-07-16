@@ -6,13 +6,17 @@ int main()
     {
         for (int j = 0; j < 5; j++)
         {
-            if (i >= j)
+            if((i+j)>=3)
             {
                 cout << "*";
             }
+            // if (i >= j)
+            // {
+            //     cout << "*";
+            // }
             else
             {
-                cout << "";
+                cout << " ";
             }
         }
         cout << endl;
