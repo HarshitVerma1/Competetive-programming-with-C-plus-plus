@@ -12,6 +12,6 @@ int fun(int n)
 }
 int main()
 {
-    fun(3);
+    fun(4);
     // cout << fun(3);
 }
