@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-void main()
+int main()
 {
     char a=128,b=127,c=-128,d=-129,e=INT8_MAX,f=INT8_MIN;
     cout<<"MIN VALUE :"<<(int)a <<endl; // -128
