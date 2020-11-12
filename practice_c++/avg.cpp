@@ -17,5 +17,5 @@ int main()
 
     avg = sum / n;
     cout << endl
-         << "AVERAGE :" << avg;
+         << "AVERAGE :" << avg << endl;
 }
