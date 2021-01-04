@@ -1,5 +1,9 @@
 #include <iostream>
 #include <array>
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin
 using namespace std;
 int main()
 {
