@@ -1,10 +1,10 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 int main()
 {
     int test, S, temp;
     cin >> test;
-    list<int> ls;
+
     int w1, w2, w3;
     while (test--)
     {
