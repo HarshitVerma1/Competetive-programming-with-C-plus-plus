@@ -1,38 +1,31 @@
 #include <iostream>
 using namespace std;
-class RationalNumber
+class My
 {
 private:
-    int p, q;
+    int a = 56;
+
+protected:
+    int b = 46;
 
 public:
-    RationalNumber(int p = 0, int q = 0)
-    {
-        this->p = p;
-        this->q = q;
-    }
-    friend RationalNumber operator+(RationalNumber R1, RationalNumber R2); //We Use friend
-    friend void display(RationalNumber R1);                                //We Use friend
+    int c = 52;
 };
-RationalNumber operator+(RationalNumber R1, RationalNumber R2) //That is a operator overloading
+class inherited : public My
 {
-    RationalNumber temp;
-    temp.p = R1.p * (R2.q) + R1.q * (R2.p);
-    temp.q = R1.q * (R2.q);
-    display(temp);
-    return temp;
-}
-void display(RationalNumber R1)
+public:
+    void display()
+    {
+        // cout << "Value of 'b' is :" <<a ;  // This is showing error
+        // cout << "Value of 'b' is :" << b << endl;
+        // cout << "Value of 'c' is :" << c << endl;
+        cout << "Value of 'a','b' & 'c' is :" << a << b << c << endl;
+    }
+};
+int main(void)
 {
-    cout << "Addition is : " << R1.p << "/" << R1.q << endl;
-}
-int main()
-{
-    int m, n, o, p;
-    cout << "Enter the p and q part of 1st Rational number repectively : " << endl;
-    cin >> m >> n;
-    cout << "Enter the p and q part of 2nd Rational number repectively : " << endl;
-    cin >> o >> p;
-    RationalNumber r1(m, n), r2(o, p), result;
-    result = r1 + r2;
+    // inherited i;
+    My i;
+    // cout << "Value of 'a','b' & 'c' is :" << i.a << i.b << i.c << endl;
+    return 0;
 }
